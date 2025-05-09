@@ -1,7 +1,7 @@
 import uploadLicense from '../assets/submit.png'
 import arrow from '../assets/right-arrow.png'
-import valuation from '../assets/audit.png'
-import getPaid from '../assets/get-paid.png'
+import valuation from '../assets/valuation.png'
+import getPaid from '../assets/pay.png'
 
 const HowItWorks = () => {
     return (

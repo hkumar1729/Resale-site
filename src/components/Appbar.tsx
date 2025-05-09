@@ -34,16 +34,16 @@ export const Appbar = () => {
       </div>
 
       <div className="hidden md:flex justify-evenly items-center p-1 space-x-7 font-helvetica">
-        <Link to="working" smooth={true} duration={1500} className="cursor-pointer hover:underline">
+        <Link to="working" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
           How it works
         </Link>
-        <Link to="testimonials" smooth={true} duration={1500} className="cursor-pointer hover:underline">
+        <Link to="testimonials" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
           Customer Testimonials
         </Link>
-        <Link to="why choose us" smooth={true} duration={1500} className="cursor-pointer hover:underline">
+        <Link to="why choose us" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
           Why choose us
         </Link>
-        <Link to="contact" smooth={true} duration={1500} className="cursor-pointer hover:underline">
+        <Link to="contact" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
           Contact
         </Link>
         <img src={modeLogo} className="h-6 w-6 cursor-pointer" onClick={handler} />
