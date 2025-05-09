@@ -8,7 +8,7 @@ import sidebarImg from '../assets/menu.png'
 export const Appbar = () => {
     const dispatch = useDispatch();
     const modeLogo = useSelector((state: RootState) => state.theme.modeLogo);
-    const darkMode = useSelector((state: RootState) => state.theme.darkMode); // ✅ use boolean
+    const darkMode = useSelector((state: RootState) => state.theme.darkMode);
     const [isOpen, setIsOpen] = useState(false);
 
     const handler = () => {

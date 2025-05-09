@@ -1,23 +1,36 @@
-
+import dotIcon from '../assets/period.png'
 
 const WhyChooseUS = () => {
     return (
-      <section
+      <div
         id="why choose us"
-        className="flex items-center justify-center h-screen"
+        className="flex flex-row items-center justify-evenly h-screen"
       >
-        <div className="text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            Transform Your Software into Instant Cash
-          </h1>
-          <p className="text-xl mb-6">
-            Get a quote in minutes and sell your unused licenses effortlessly.
-          </p>
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100">
-            Get a Quote
-          </button>
+        <h1 className='font-semibold font-mono text-2xl md:text-4xl underline p-10'>Why choose us</h1>
+        <div className="flex flex-col items-start p-10">
+          <div className='flex flex-rows items-center justify-start'>
+            <img src={dotIcon} className='h-10 w-10'/>
+            <p className='font-normal'>Best Market Prices</p>
+          </div>
+          <p className='ml-10'>Get the highest value for your software licenses.</p>
+          <div className='flex flex-rows items-center'>
+            <img src={dotIcon} className='h-10 w-10'/>
+            <p>Fast & Secure Transactions</p>
+          </div>
+          <p className='ml-10'> Quick payments with full security.</p>
+          <div className='flex flex-rows items-center'>
+            <img src={dotIcon} className='h-10 w-10'/>
+            <p>Seamless Process</p>
+          </div>
+          <p className='ml-10'>Upload, get valuation, get paid.</p>
+          <div className='flex flex-rows items-center'>
+            <img src={dotIcon} className='h-10 w-10'/>
+            <p>Dedicated Support</p>
+          </div>
+          <p className='ml-10'> 24/7 support for any queries.</p>
         </div>
-      </section>
+
+      </div>
     );
   };
   

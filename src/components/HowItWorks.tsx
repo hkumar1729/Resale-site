@@ -7,7 +7,7 @@ const HowItWorks = () => {
     return (
       <div
         id="working"
-        className="flex flex-col items-center justify-center h-screen"
+        className="flex flex-col items-center justify-center h-screen p-10"
       >
         <h1 className='p-12 mb-8 font-semibold font-mono text-4xl underline'>How it works?</h1>
         <div className='flex flex-row items-center justify-center'>
