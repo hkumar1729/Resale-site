@@ -7,7 +7,7 @@ const WhyChooseUS = () => {
         className="flex flex-row items-center justify-evenly h-screen"
       >
         <h1 className='font-semibold font-mono text-2xl md:text-4xl underline p-10'>Why choose us</h1>
-        <div className="flex flex-col items-start p-10">
+        <div className="flex flex-col items-start p-10 font-futura">
           <div className='flex flex-rows items-center justify-start'>
             <img src={dotIcon} className='h-10 w-10'/>
             <p className='font-normal'>Best Market Prices</p>

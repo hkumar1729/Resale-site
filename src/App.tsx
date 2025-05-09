@@ -11,7 +11,7 @@ import { type RootState } from './app/store';
 
 function App() {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
-  return <div className={`${darkMode ? 'bg-white text-black' : 'bg-gray-900 text-white'}`}> 
+  return <div className={`${darkMode ? 'bg-white text-black' : 'bg-gray-900 text-white shadow-md transition-colors duration-300' }`}> 
     <Appbar/>
     <HeroSection/>
     <HowItWorks/>

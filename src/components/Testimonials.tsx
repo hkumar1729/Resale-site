@@ -9,7 +9,7 @@ const Testimonials = () => {
       message: "Soft Sell made it incredibly easy to sell my old software licenses. The process was seamless and quick."
     },
     {
-      name: "Jane Smith",
+      name: "Smith Bieber",
       role: "Project Manager",
       company: "Innovate Solutions",
       message: "I received the best market price for my software. I’m definitely using Soft Sell again."
@@ -20,7 +20,7 @@ const Testimonials = () => {
         id="testimonials"
         className="flex flex-col items-center justify-center h-screen p-10"
       >
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 font-mono">
           <h2 className="text-2xl md:text-3xl mt-28 md:mt-0 font-bold">Customer Testimonials</h2>
           <p className="text-gray-600 mt-2">What our customers are saying</p>
         </div>
@@ -28,11 +28,10 @@ const Testimonials = () => {
           {testimonials.map((value)=>(
             <div className="flex w-full p-4 max-w-lg flex-col rounded-lg shadow-sm border border-slate-200 my-6">
               <div className="flex items-center gap-4">
-                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" className="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
                 <div className="flex w-full flex-col">
                   <div className="flex items-center justify-between">
                     <h5 className="text-xl font-semibold">
-                      {value.name}
+                      {value.name}<br/><span className="text-sm font-thin">{value.role}</span>
                     </h5>
                     <div className="flex items-center gap-0 5">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-yellow-600">
