@@ -9,7 +9,7 @@ const HowItWorks = () => {
         id="working"
         className="flex flex-col items-center justify-center h-screen p-10 font-futura"
       >
-        <h1 className='p-12 mb-8 font-semibold text-4xl underline'>How it works</h1>
+        <h1 className='p-5 mb-8 font-semibold text-3xl underline'>How it works</h1>
         <div className='flex flex-row items-center justify-center'>
           <div className="text-center items-center mr-5">
           <img src={uploadLicense} className='h-24 w-24'/>
