@@ -1,23 +1,32 @@
-
+import uploadLicense from '../assets/submit.png'
+import arrow from '../assets/right-arrow.png'
+import valuation from '../assets/audit.png'
+import getPaid from '../assets/get-paid.png'
 
 const HowItWorks = () => {
     return (
-      <section
+      <div
         id="working"
-        className="flex items-center justify-center h-screen"
+        className="flex flex-col items-center justify-center h-screen"
       >
-        <div className="text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            Transform Your Software into Instant Cash
-          </h1>
-          <p className="text-xl mb-6">
-            Get a quote in minutes and sell your unused licenses effortlessly.
-          </p>
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-gray-100">
-            Get a Quote
-          </button>
+        <h1 className='p-12 mb-8 font-semibold font-mono text-4xl underline'>How it works?</h1>
+        <div className='flex flex-row items-center justify-center'>
+          <div className="text-center items-center mr-5">
+          <img src={uploadLicense} className='h-24 w-24'/>
+          <h1 className='font-medium mt-5'>Upload license</h1>
+          </div>
+          <div><img src={arrow} className='h-10 w-10 mb-8'/></div>
+          <div className="text-center mr-5 ml-5">
+            <img src={valuation} className='h-24 w-24'/>
+            <h1 className='font-medium mt-5'>Get Valuation</h1>
+          </div>
+          <div><img src={arrow} className='h-10 w-10 mb-8'/></div>
+          <div className="text-center ml-5">
+            <img src={getPaid} className='h-24 w-24'/>
+            <h1 className='font-medium mt-5'>Get Paid</h1>
+          </div>
         </div>
-      </section>
+      </div>
     );
   };
   
