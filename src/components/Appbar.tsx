@@ -34,16 +34,16 @@ export const Appbar = () => {
       </div>
 
       <div className="hidden md:flex justify-evenly items-center p-1 space-x-7 font-helvetica">
-        <Link to="working" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
+        <Link to="working" smooth={true} duration={1500} spy={true} activeClass='active-link'  className="cursor-pointer hover:underline hover:decoration-orange-500">
           How it works
         </Link>
-        <Link to="testimonials" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
+        <Link to="testimonials" smooth={true} duration={1500} spy={true} activeClass='active-link'  className="cursor-pointer hover:underline hover:decoration-orange-500">
           Customer Testimonials
         </Link>
-        <Link to="why choose us" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
+        <Link to="why choose us" smooth={true} duration={1500} spy={true} activeClass='active-link'  className="cursor-pointer hover:underline hover:decoration-orange-500">
           Why choose us
         </Link>
-        <Link to="contact" smooth={true} duration={1500} className="cursor-pointer hover:underline hover:decoration-orange-500">
+        <Link to="contact" smooth={true} duration={1500} spy={true} activeClass='active-link'  className="cursor-pointer hover:underline hover:decoration-orange-500">
           Contact
         </Link>
         <img src={modeLogo} className="h-6 w-6 cursor-pointer" onClick={handler} />
@@ -58,16 +58,16 @@ export const Appbar = () => {
           <button className="self-end mb-4" onClick={() => setIsOpen(false)}>
             <img src={sidebarImg} alt="close" className="h-6 w-6 mt-3" />
           </button>
-          <Link onClick={() => setIsOpen(false)} to="working" smooth={true} duration={1500} className="cursor-pointer">
+          <Link onClick={() => setIsOpen(false)} to="working" spy={true} activeClass='active-link'  smooth={true} duration={1500} className="cursor-pointer">
             How it works?
           </Link>
-          <Link onClick={() => setIsOpen(false)} to="testimonials" smooth={true} duration={1500} className="cursor-pointer">
+          <Link onClick={() => setIsOpen(false)} to="testimonials" spy={true} activeClass='active-link'  smooth={true} duration={1500} className="cursor-pointer">
             Customer Testimonials
           </Link>
-          <Link onClick={() => setIsOpen(false)} to="why choose us" smooth={true} duration={1500} className="cursor-pointer">
+          <Link onClick={() => setIsOpen(false)} to="why choose us" spy={true} activeClass='active-link'  smooth={true} duration={1500} className="cursor-pointer">
             Why choose us
           </Link>
-          <Link onClick={() => setIsOpen(false)} to="contact" smooth={true} duration={1500} className="cursor-pointer">
+          <Link onClick={() => setIsOpen(false)} to="contact" spy={true} activeClass='active-link'  smooth={true} duration={1500} className="cursor-pointer">
             Contact
           </Link>
           <img src={modeLogo} className="h-7 w-7 cursor-pointer" onClick={handler} />

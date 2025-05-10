@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .active-link {
+    @apply underline decoration-orange-500;
+  }
+}
